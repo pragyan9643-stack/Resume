@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order at Pragyan Delivery</title>
+</head>
+<body>
+    <header>
+        <h1>Order Your Favorite Items</h1>
+        <p>Welcome to Pragyan Delivery! Please place your order below.</p>
+     </header>
+     <hr>
+    <form action="/submit-order" method="POST">
+     <div>
+       <label for="name">Name:</label>
+       <input id="name" type="text" placeholder="Type Your Name Here">
+       </div>
+    
+     <div>
+        <label for="SenderAddress">Sender's Address</label>
+        <input id="SenderAddress" type="text" placeholder="type your address here">
+     </div>
+
+     <div>
+        <label for="pincode">Pincode</label>
+        <input id="pincode" type="text" placeholder="Type your pincode here">
+    </div>
+  
+    <div>
+        <label for="ph">Phone Number</label>
+        <input id="ph" type="tel" placeholder="Type your phone number here">
+    </div>
+
+    <div>
+        <label for="mail">Email</label>
+        <input id="mail" type="email" placeholder="Type Your E-Mail Address Here">
+    </div>
+
+    <div>
+        <label for="item">Item to Order</label>
+        <input id="item" type="text" placeholder="Type the item you want to order">
+    </div>
+
+    <div>
+        <label for="order">Order Details</label>
+        <input id="order" type="text" placeholder="Type the details of you order">
+    </div>
+    
+   <div>
+       <label for="ReceiverName">Receiver's Name:</label>
+       <input id="ReceiverName" type="text" placeholder="Type receiver's name here">
+   </div>
+    
+     <div>
+        <label for="ReceiverAddress">Receiver's Address</label>
+        <input id="ReceiverAddress" type="text" placeholder="type receiver's address here">
+     </div>
+
+     <div>
+        <label for="ReceiverPin">Pincode</label>
+        <input id="ReceiverPin" type="text" placeholder="Type receiver's pincode here">
+    </div>
+  
+    <div>
+        <label for="ReceiverPhone">Phone Number</label>
+        <input id="ReceiverPhone" type="tel" placeholder="Type receiver's phone number here">
+    </div>
+
+    <div>
+        <label for="ReceiverEmail">Email</label>
+        <input id="ReceiverEmail" type="email" placeholder="Type receiver's email address here">
+    </div>
+    
+    <div>
+        <button type="submit">Place Order</button>
+    </div>
+    </form>
+
+    <!-- JavaScript to add style -->
+    <script>
+        const style = document.createElement("style");
+        style.innerHTML = `
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9;
+                margin: 20px;
+            }
+            header {
+                text-align: center;
+                background: #4CAF50;
+                color: white;
+                padding: 15px;
+                border-radius: 8px;
+            }
+            form {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+                max-width: 600px;
+                margin: auto;
+            }
+            div {
+                margin-bottom: 15px;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            input {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            button {
+                background: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background: #45a049;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
